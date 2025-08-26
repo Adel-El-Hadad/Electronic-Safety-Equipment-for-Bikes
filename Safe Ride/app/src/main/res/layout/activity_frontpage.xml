@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".Frontpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_alignParentTop="true">
+
+    <TextView
+        android:id="@+id/TextViewnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Safe Ride"
+        android:textColor="@color/black"
+        android:textSize="60dp"
+        android:layout_gravity="center_horizontal"/>
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+            <Button
+            android:id="@+id/signup_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextViewnew"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Sign up" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/TextViewcur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I am a current user."
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/login_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
